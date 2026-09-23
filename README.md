@@ -5,6 +5,7 @@
 Rpay is a front-end concept for an international bank and mobile wallet product. It was built as a way to learn static web development in depth: page structure, component-driven CSS, layout systems (Flexbox + Grid), theming with CSS custom properties, and responsive design — all without relying on Bootstrap, Tailwind, or any JS framework.
 
 🔗 Repo: [github.com/kabouwa/Rpay-Frontend-Mobile-Wallet](https://github.com/kabouwa/Rpay-Frontend-Mobile-Wallet)
+
 🌐 Website : https://kabouwa.github.io/Rpay-Frontend-Mobile-Wallet/
 ---
 
