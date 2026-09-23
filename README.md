@@ -6,7 +6,8 @@ Rpay is a front-end concept for an international bank and mobile wallet product.
 
 🔗 Repo: [github.com/kabouwa/Rpay-Frontend-Mobile-Wallet](https://github.com/kabouwa/Rpay-Frontend-Mobile-Wallet)
 
-🌐 Website : https://kabouwa.github.io/Rpay-Frontend-Mobile-Wallet/
+🌐 Website : [kabouwa.github.io/Rpay-Frontend-Mobile-Wallet](https://kabouwa.github.io/Rpay-Frontend-Mobile-Wallet)
+
 ---
 
 ## ✨ Highlights
