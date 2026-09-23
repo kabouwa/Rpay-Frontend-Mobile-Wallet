@@ -1,0 +1,538 @@
+html{
+    scrollbar-color: var(--scrollbar) var(--primary-hover);
+}
+.container{
+    width: 90%;
+    max-width: 1000px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* First header */
+header{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 0px;
+    border-bottom: var(--border);
+    color: var(--muted);
+}
+
+/* Second header */
+.sticky-nav{
+    z-index: 1000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80px;
+    border-bottom: var(--border);
+    background-color: var(--bg-secondary);
+    backdrop-filter: blur(3px);
+    position: sticky;
+    top: 0;
+}
+[type="radio"]{
+    display: none;
+}
+.sticky-nav label{
+    cursor: pointer;
+    display: none;
+    margin-left: 10px;
+}
+/* first navigation part*/
+.nav1 a{
+    display: flex;
+    flex-direction: column;
+    text-decoration: none;
+}
+.nav1 img{
+    width: 75px;
+}
+.nav1 span{
+    font-size:0.9rem;
+    color: var(--muted);
+}
+
+
+/* second navigation part*/
+.nav2{
+    z-index: 1200;
+    background-color: var(--white);
+    border: var(--border);
+    border-radius: 30px;
+    padding: 8px 8px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+}
+.nav2 a{
+    text-decoration: none;
+    color: var(--muted);
+    padding: 10px 15px;
+    border-radius: 30px;
+}
+.nav2 a:hover{
+    background-color: var(--primary-hover);
+    color: black;
+    transition: all 0.2s ease;
+}
+
+/* Third navigation part (button by root)*/
+.nav3{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+}
+
+
+
+/* Main content */
+
+main{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--bg-secondary);
+}
+
+/* Section 1 : Home */
+#home{
+    width: 100%;
+    background-image: linear-gradient(to right bottom, var(--white), var(--primary-lightest));
+    padding-bottom: 100px;
+    display: flex;
+    justify-content: center;
+}
+
+#home .grid-container{
+    display: grid;
+    grid-template-columns: 1.2fr 0.8fr;
+    gap: 20px;
+    margin-top: 50px;
+}
+.grid-left{
+    padding-top: 100px;
+}
+.grid-left h1{
+    font-size: 2.2rem;
+    color: var(--black);
+}
+.grid-left h2{
+    font-size: 2.2rem;
+    color: transparent;
+    background-image: linear-gradient(to bottom, var(--primary), var(--accent));
+    background-clip: text;
+}
+.grid-left p{
+    margin: 10px 0px 20px;
+}
+.primary-hover{
+    background-color: var(--primary-hover);
+    margin-left: 5px;
+}
+.cards{
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    gap: 20px;
+    margin-top: 30px;
+}
+.card{
+    flex-grow: 1;
+    border: var(--border);
+    border-radius: var(--radius-btn);
+    background-color: var(--white);
+    padding: 10px 15px;
+}
+.card h1{
+    font-size: 1.3rem;
+    color: var(--black);
+}
+.card p{
+    margin: 0;
+}
+
+/* Previw Card */
+.preview-card{
+    background-color: var(--white);
+    border-radius: var(--radius-card);
+    border: var(--border);
+    box-shadow: var(--shadow);
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+}
+.verified{
+    align-self: flex-end;
+}
+.verified + p{
+    margin-top: -10px;
+}
+.preview-card h1{
+    color: var(--black);
+    font-weight: 900;
+    font-size: 1.7rem;
+    margin: 10px 0px;
+}
+
+.balance{
+    align-self: stretch;
+    position: relative;
+    border: var(--border);
+    padding: 15px 45px;
+    font-size: 1.1rem;
+    line-height: 40px;
+    border-radius: var(--radius-card);
+    margin: 10px 0;
+}
+.disc{
+    position: absolute;
+    top: 45%;
+    left: 20px;
+}
+.balance h5{
+    color: var(--black);
+}
+.line{
+    margin: 5px 0;
+}
+.line + p{
+    margin: 10px 0;
+}
+.activities{
+    border: var(--border);
+    align-self: stretch;
+    border-radius: var(--radius-card);
+    display: flex;
+    justify-content: space-between;
+    margin: 10px 0;
+    height: 50px;
+    position: relative;
+    padding: 12px 10px 12px 60px;
+}
+/* Icons Created in root style */
+.activities span{
+    top: 20px;
+    left: 15px;
+}
+.activities h1{
+    color: var(--black);
+    text-align: right;
+    font-size: 1rem;
+    font-weight: 700;
+    margin: 0;
+    margin-top: 4px;
+}
+.activities .operation{
+    text-align: left;
+}
+.preview-card .options{
+    margin: 5px 0px;
+}
+
+
+/* Section 2 : Join Us */
+#join-us{
+    height: 120vh;
+    width: 100%;
+    background-image: url('../img/media1.png');
+    background-attachment: cover;
+    background-position: center;
+    color: var(--white);
+    font-size: 2.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-end;
+    position: relative;
+}
+#join-us .top{
+    align-self: flex-start;
+    position: sticky;
+    top: 75px;
+    margin-left: 30px;
+}
+#join-us .bottom{
+    margin-right: 30px;
+}
+
+
+/* Section 3 : Features */
+#features{
+    width: 100%;
+    border-bottom: var(--border);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 100px 0px ;
+}
+#features .container{
+    flex-direction: column;
+}
+#features strong{
+    font-weight: 700;
+    font-size: 2.7rem;
+    color: var(--black);
+    margin-bottom: 20px;
+}
+#features .grid-container{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 10px;
+}
+#features .grid-item{
+    border: var(--border);
+    border-radius: var(--radius-card);
+    background-color: var(--white);
+    padding: 20px;
+}
+
+ #features .grid-item i{
+    background-color: var(--primary-lightest);
+    border: solid 1px var(--primary-light);
+    border-radius: 10px;
+    color: var(--black);
+    place-content: center;
+    display: grid;
+    height: 30px;
+    width: 30px;
+}
+#features .grid-item h1{
+    color: var(--primary);
+    margin: 5px 0px;
+}
+#features .grid-item h2{
+    color: var(--black);
+    margin-bottom: 5px;
+    font-size: 1.2rem;
+}
+
+
+/* Section 4 : Fees */
+#fees{
+    padding: 170px 0px;
+    width: 100%;
+    background-image: linear-gradient(to right bottom, var(--primary), var(--accent));
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#fees .container{
+    flex-direction: column;
+    align-items: flex-start;
+}
+#fees .grid-container{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+}
+#fees h1{
+    font-weight: 700;
+    font-size: 3rem;
+    color: var(--white);
+    margin: 0;
+}
+#fees .description{
+    margin-bottom: 30px;
+    color: var(--white);
+}
+
+#fees .grid-item h2{
+    color: var(--white);
+    margin-bottom: 10px;
+}
+table{
+    width: 100%;
+    height: 100%;
+    border: var(--border);
+    border-radius: var(--radius-card);
+    padding: 10px;
+    background-color: var(--white);
+    box-shadow: var(--shadow);
+}
+th{
+    color: var(--black);
+}
+td{
+    border: var(--border);
+    border-radius: var(--radius-card);
+    padding: 10px 15px;
+    color: var(--black)
+}
+
+
+
+/* Section 5 : SignUp */
+
+#signup{
+    padding: 70px 0;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#signup .container{
+    background-image: linear-gradient(to right, var(--white), var(--primary-lightest));
+    border: var(--border);
+    border-radius: var(--radius-card);
+    padding: 40px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+#signup .left {
+    width: 50%;
+}
+#signup .right{
+    display: flex;
+    gap: 10px;
+}
+
+#signup h1{
+    color: var(--black);
+}
+
+footer{
+    width: 100%;
+    padding: 100px 0px;
+    display: flex;
+    justify-content: center;
+}
+footer img{
+    width: 100px;
+    margin-bottom: 20px;
+}
+footer .copyright{
+    max-width: 620px;
+    margin-bottom: 15px;
+}
+footer .right{
+    align-self: flex-start;
+    display: flex;
+    gap: 20px;
+}
+footer a{
+    transition: all 0.2s ease;
+}
+footer a:hover{
+    text-decoration: underline;
+    color: var(--black);
+}
+
+/* Responsive Rules */
+@media screen and (max-width:900px){
+    header{
+        font-size: 0.55rem;
+    }
+    .sticky-nav a{
+        font-size: 0.8rem;
+    }
+    .nav1 span{
+        font-size: 0.7rem;
+    }
+    
+    .nav2,.nav3{
+        position: fixed;
+        visibility: hidden;
+        opacity: 0;
+        right: 20px;
+        transition: all 0.2s cubic-bezier(0.23, 1, 0.320, 1);
+    }
+    .nav2{
+        gap: 0px;
+        top: 90px;
+        transform: scale(0.3,0.5) translateY(-70px);
+    }
+    .nav3{
+        top: 97px;
+        transform: scale(0.3,0.5) translate(50px,-70px);
+    }
+
+    /* Open Navigation */
+    .sticky-nav label{
+    display: inline-block;
+    }
+    #open-nav2:checked ~ .nav2{
+        visibility: visible;
+        opacity: 1;
+        transform: scale(1) translateY(0px);
+    }
+    #open-nav3:checked ~ .nav3{
+        visibility: visible;
+        opacity: 1;
+        transform: scale(1) translate(0px);
+    }
+    /* Close Navigation */
+    [for="hide-menu"]{
+        visibility: hidden;
+        opacity: 0;
+        scale: 0.7;
+        transition: all 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+    }
+    #open-nav2:checked ~ [for="hide-menu"], #open-nav3:checked ~ [for="hide-menu"]{
+        visibility: visible;
+        opacity: 1;
+        scale: 1;
+    }
+    [for="hide-menu"] i{
+        transform: rotate(180deg);
+        scale: 0.5;
+        transition: all 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+    }
+    #open-nav2:checked ~ [for="hide-menu"] i, #open-nav3:checked ~ [for="hide-menu"] i{
+        scale: 1;
+        transform: rotate(0deg);
+    }
+
+
+
+    #home .grid-container{
+        grid-template-columns: 1fr;
+    }
+    #join-us{
+        font-size: 1rem;
+        align-items: flex-start;
+        justify-content: center;
+    }
+    #join-us .top, #join-us .bottom{
+        position: relative;
+        margin: 35px 20px;
+    }
+    #features strong{
+        font-size: 2rem;
+    }
+    #features .grid-container{
+        grid-template-columns: 1fr;
+    }
+
+    #fees .grid-container{
+        grid-template-columns: 1fr;
+        gap: 100px;
+    }
+    #signup .container{
+        flex-direction: column;
+        padding: 0;
+    }
+    #signup .left{
+        width: 80%;
+        margin: 20px 15px 0;
+    }
+    #signup .right{
+        margin: 30px 10px;
+    }
+    footer .container{
+        flex-wrap: wrap;
+        gap: 30px;
+    }
+    footer .right{
+        order: -1;
+    }
+}

@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="Author" content="Mohammed Rahali">
+    <meta name="Description" 
+       content="Rpay is a modern digital wallet and online banking interface that allows users to manage balances,
+        view linked cards, transfer money, and access secure financial tools through a clean and responsive web design.">
+    <meta name="keywords" content="Rpay, pay, rahali pay, Wallet, Online bank">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+    <title>Rpay - Transfer</title>
+    <link rel="icon" href="../assets/icon/R-logo.png">
+    <meta name="theme-color" content="#2563EB">
+    <!-- StyleSheets -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="../assets/styles/root.css">
+    <link rel="stylesheet" href="../assets/styles/Transfer.css">
+</head>
+<body>
+    <div class="customer-entry-animation"><img src="../assets/img/logos/Rpay.png"><div class="load-bar"><span></span></div></div>
+    <header class="header">
+        <div class="header-nav1">
+            <a href="../index.html"><img src="../assets/img/logos/Rpay.png" alt="Rpay"></a>
+        </div>
+        <div class="header-nav2">
+                <a href="Dashboard.html"><i class="fa-solid fa-chart-line icon"></i>Dashboard</a>
+                <a href="Wallet.html"><i class="fa-solid fa-wallet icon"></i> Wallet</a>
+                <a href="Transfer.html" class="active"><i class="fa-solid fa-right-left icon"></i>Transfer</a>
+        </div>
+        <div class="header-nav3">
+            <a href="#" class="btn btn-light"><i class="fa-solid fa-gear"></i></a>
+            <a href="Auth.html" class="btn btn-danger hidden-phone">Log out</a>
+            <img src="../assets/img/profile.png" alt="user-profile">
+        </div>
+    </header>
+
+    <label for="navbar-toggler" class="hidden navbar-toggler-phone btn btn-light"><i class="fa-solid fa-bars"></i></label>
+    <div class="flex-menu-container">
+        <input type="checkbox" id="navbar-toggler">
+        <nav class="aside-menu">
+            <div class="top">
+                <div class="user-card">
+                    <a href="#">
+                    <img src="../assets/img/profile.png" alt="user-profile">
+                        <div>
+                            <h4>Mohammed Rahali</h4>
+                            <p>Account settings</p>
+                        </div> 
+                    </a>
+                </div>
+                <div class="search-menu">
+                    <input type="search">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                </div>
+                <a href="Dashboard.html"><i class="fa-solid fa-chart-line"></i>Dashboard</a>
+                <a href="Wallet.html"><i class="fa-solid fa-wallet"></i> Wallet</a>
+                <a href="Transfer.html" class="active"><i class="fa-solid fa-right-left"></i>Transfer</a>
+                <a href="Transactions.html"><i class="fa-solid fa-money-bill-transfer"></i>Transactions</a>
+                <a href="Support.html#last"><i class="fa-solid fa-headset"></i>Support</a>
+            </div>
+            <div class="bottom">
+                <a href="Auth.html" class="btn-danger"><i class="fa-solid fa-arrows-rotate"></i>Switch account</a>
+                <a href="../index.html" class="btn-danger"><i class="fa-solid fa-arrow-right-from-bracket"></i>Log out</a>
+            </div>
+        </nav>
+
+        <main class="main-container">
+            <p class="path"><strong> Rpay › Dashboard › Transfer</strong></p>
+
+            <div class="grid-container">
+                <div class="grid-item grid-header">
+                    <span class="badge badge-success"><i class="fa-solid fa-shield-halved icon"></i> Secure transfer</span>
+                    <h2>Send money</h2>
+                    <p>Transfer between wallets or send to a recipient.</p>
+                </div>
+                <div class="grid-item item1">
+                    <form action="Dashboard.html" method="GET">
+                        <div class="row">
+                            <h3>Transfer details</h3>
+                            <p class="badge badge-warning"><i class="fa-solid fa-receipt icon"></i> Fees apply</p>
+                        </div>
+
+                        <div class="row">
+                            <div class="field">
+                                <i class="fa-solid fa-wallet"></i>
+                                <label for="wallet">From wallet(Source)</label>
+                                <select id="wallet">
+                                    <option value="mad-wall">MAD Wallet • MAD</option>
+                                    <option value="eur-wall">EUR Wallet • EUR</option>
+                                    <option value="usd-wall" selected>USD Wallet • USD</option>
+                                </select>
+                                <span class="list-icon-hide"><i class="fa-solid fa-angle-down"></i></span>
+                            </div>
+                            <div class="field">
+                                <i class="fa-solid fa-user"></i>
+                                <label for="wallet">To Recipient</label>
+                                <input list="recipient" placeholder="Recipient" required>
+                                <datalist id="recipient">
+                                    <option value="Ahmed K. • Personal">
+                                    <option value="Company HKS. • Business">
+                                    <option value="Sarah M. • Personal">
+                                    <option value="Mohammed R. • Personal">
+                                </datalist>
+                                <span class="list-icon-hide"><i class="fa-solid fa-angle-down"></i></span>
+                            </div>
+                        </div>
+                        <span class="line transfer-icon-line"></span>
+                        <div class="row">
+                            <span class="transfer-icon"><i class="fa-solid fa-right-left"></i></span>
+                        </div>
+
+                        <div class="row">
+                            <div class="field">
+                                <i class="fa-solid fa-coins"></i>
+                                <label for="wallet">Amount</label>
+                                <input type="number" min="1" max="99999" value="250.00" placeholder="000.00" required>
+                            </div>
+                            <div class="field">
+                                <i class="fa-solid fa-globe"></i>
+                                <label for="wallet">Currency</label>
+                                <select>
+                                    <option value="usd" selected>USD</option>
+                                    <option value="mad">MAD</option>
+                                    <option value="eur">EUR</option>
+                                    <option value="">GBP</option>
+                                    <option value="">BRL</option>
+                                    <option value="">AUD</option>
+                                    <option value="">CAD</option>
+                                    <option value="">CNY</option>
+                                    <option value="">INR </option>
+                                </select>
+                                <span class="list-icon-hide"><i class="fa-solid fa-angle-down"></i></span>
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <div class="field" style="flex-grow: 1;">
+                                <i class="fa-solid fa-globe"></i>
+                                <label for="wallet">Note(Optional)</label>
+                                <input type="text" maxlength="100" placeholder="e.g. Rent / Invoice / Gift">
+                            </div>
+                        </div>
+                        <div class="row">
+                            <button type="submit" class="btn btn-light" style="font-weight:700;"><i class="fa-regular fa-floppy-disk icon"></i>Save draft</button>
+                            <button type="submit" class="btn btn-primary"><i class="fa-solid fa-paper-plane icon"></i>Send Transfer</button>
+                        </div>
+                        <span class="line"></span>
+                        <div class="row">
+                            <div class="total-card">
+                                <p>Transfer fee<span>$ 2.50</span></p>
+                                <p>Estimated rate<span>% 1.02</span></p>
+                                <p>You send <span>$ 250.00</span></p>
+                                <span class="line"></span>
+                                <p>Total coast<span>$ 252.50</span></p>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+
+
+                <div class="grid-item item2">
+                    <h3>Recent recipients</h3>
+                    <p>Pick a recipient to fill the form faster.</p>
+                    <div class="cards">
+                        <span>A</span>
+                        <div>
+                            <h3>Ahmed K.</h3>
+                            <p>Last transfer: 3 days</p>
+                        </div>
+                        <h3>-$75</h3>
+                    </div>
+
+                    <div class="cards">
+                        <span>C</span>
+                        <div>
+                            <h3>Company HKS.</h3>
+                            <p>Last transfer: 5 days</p>
+                        </div>
+                        <h3>-$384</h3>
+                    </div>
+
+                    <div class="cards">
+                        <span>S</span>
+                        <div>
+                            <h3>Sarah M.</h3>
+                            <p>Last transfer: 1 weeks</p>
+                        </div>
+                        <h3>-$40</h3>
+                    </div>
+
+                    <div class="cards">
+                        <span>M</span>
+                        <div>
+                            <h3>Mohammed R.</h3>
+                            <p>Last transfer: 2 weeks</p>
+                        </div>
+                        <h3>-$590</h3>
+                    </div>
+                
+                    <div class="tips">
+                        <i class="fa-solid fa-circle-info icon"></i>
+                        <h2>Transfer tips</h2>
+                        <p>Double-check the recipient and currency before sending. Fees are shown clearly before confirmation.</p>
+                    </div>
+
+                    <a href="../index.html" class="btn btn-light"><i class="fa-solid fa-file-invoice icon"></i>View fees</a>
+                    <a href="Support.html#last" class="btn btn-light"><i class="fa-solid fa-headset icon"></i>Contact support</a>
+                </div>
+
+
+            </div> <!-- end grid container -->
+
+            <!-- Footer -->
+            <span class="line"></span>
+            <footer class="footer">
+                <div class="left">
+                        <a href="index.html"><img src="../assets/img/logos/Rpay.png" alt="footer-logo"></a>
+                        <p class="copyright">Rpay Payments Ltd. is a digital payments and online wallet provider offering account management, money transfers, and card services through its web platform.</p>
+                        <p class="copyright">Services are provided in accordance with applicable electronic money and payment service regulations in the user’s location.</p>
+                        <p>© 2026 Rpay. All rights reserved.</p>
+                    </div>
+                    <div class="right">
+                        <a href="../index.html">Home</a>
+                        <a href="Dashboard.html">Dashboard</a>
+                        <a href="Wallet.html">Wallet</a>
+                        <a href="Support.html#last">Support</a>
+                    </div>
+            </footer>
+        </main>
+    </div>
+</body>
+</html>

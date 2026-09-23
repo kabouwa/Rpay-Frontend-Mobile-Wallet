@@ -1,0 +1,243 @@
+/* Grid configs */
+.grid-container{
+    max-width: 1100px;
+    width: 95%;
+    box-sizing: border-box;
+    margin: auto;
+    display: grid;
+    place-content: center;
+    gap: 10px;
+    grid-template-columns: 1.1fr 0.9fr;
+    grid-template-areas: "item1 item1" "item2 item3";
+}
+.grid-item{
+    background-color: var(--white);
+    border: var(--border);
+    border-radius: var(--radius-card);
+    box-shadow: var(--shadow);
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    justify-content: space-between;
+}
+.item1{grid-area: item1}
+.item2{grid-area: item2}
+.item3{grid-area: item3}
+
+
+
+
+/* Item 1 : header of grid */
+.item1{
+    flex-direction: row;
+    align-items: center;
+    background: linear-gradient(to left, #7699e558, white);
+}
+.item1 h2{
+    color: var(--black);
+}
+.item1 .badge{
+    flex-shrink: 0;
+}
+
+/* Item 2 : left card */
+.item2 h3{
+    color: var(--black);
+}
+.balance-card{
+    background: linear-gradient(to right, #7699e558, #75d6ff27);
+    border: solid 1px var(--primary-light);
+    border-radius: var(--radius-card);
+    padding: 15px;
+    position: relative;
+    min-height: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.balance-card > span{
+    border-radius: var(--radius-card);
+    background-color: var(--white);
+    border: var(--border);
+    backdrop-filter: var(--glass-blur);
+    padding: 10px 17px;
+    color: var(--black);
+    font-weight: 700;
+    position: absolute;
+    top: 10px;
+    right: 15px;
+}
+.balance-card h1{
+    color: var(--black);
+}
+.balance-card h3, .balance-card h4{
+    font-weight: 700;
+}
+.balance-actions{
+    margin: 10px 0;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5px;
+}
+.item2 .title{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 10px 0 15px;
+}
+.item2 .title span{
+    border-radius: var(--radius-card);
+    border: var(--border);
+    padding: 5px 12px;
+}
+.wallet{
+    position: relative;
+    border-radius: var(--radius-card);
+    border: var(--border);
+    padding: 10px 17px 10px 40px;
+    margin: 10px 0;
+    display: flex;
+    align-items: stretch;
+    justify-content: space-between;
+    height: 100px;
+}
+.wallet > span{
+    position: absolute;
+    top: 20px;
+    left: 15px;
+}
+.wallet p{
+    font-size: 0.9rem;
+    white-space: nowrap;
+}
+.wallet .right{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: space-between;
+}
+.wallet-actions{
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    gap: 3px;
+}
+.wallet-actions button{
+    font-size: 0.9rem;
+}
+.activities{
+    border: var(--border);
+    align-self: stretch;
+    border-radius: var(--radius-card);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 10px 0;
+    height: 60px;
+    position: relative;
+    padding: 12px 10px 12px 60px;
+}
+.activities span{
+    top: 28px;
+    left: 15px;
+}
+.activities h1{
+    color: var(--black);
+    text-align: right;
+    font-size: 1rem;
+    font-weight: 700;
+    margin: 0;
+    margin-top: 4px;
+}
+.activities .operation{
+    text-align: left;
+}
+.preview-card .options{
+    margin: 5px 0px;
+}
+
+/* Item 3 : Right card */
+.item3 > h3{
+    color: var(--black);
+}
+
+.cards .btn{
+    position: absolute;
+    top: 25px;
+    left: 12px;
+    background-color: var(--primary-lightest);
+    border-color: var(--primary-light);
+    color: var(--black);
+}
+.cards:first-of-type{
+    margin-top: 15px;
+}
+.cards{
+    margin: 3px 0;
+    height: 70px;
+    position: relative;
+    border: var(--border);
+    border-radius: var(--radius-card);
+    padding: 10px 20px 10px 75px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.cards h3{
+    color: var(--black);
+}
+.cards p{
+    white-space: nowrap;
+}
+.item3 .btn-light{
+    margin: 5px 0;
+}
+.details-title{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+.details{
+    border: var(--border);
+    border-radius: var(--radius-card);
+    margin: 5px 0;
+    padding: 15px 20px;
+    display: flex;
+    justify-content: space-between;
+}
+.details h3:last-of-type{
+    color: var(--black);
+}
+.details:last-of-type{
+    flex-direction: column;
+    gap: 10px;
+}
+
+
+@media  screen and (max-width:1200px) {
+    .grid-container{
+        grid-template-areas: 
+        "item1 item1" 
+        "item2 item2" 
+        "item3 item3";
+    }
+    .wallet{
+        flex-direction: column;
+        min-height: 120px;
+    }
+}
+@media  screen and (max-width:700px) {
+    .balance-card {
+        padding-top: 60px;
+    }
+    .balance-card > span{
+        left: 15px;
+    }
+    .cards{
+        flex-direction: column;
+        align-items: flex-start;
+        min-height: 80px;
+        gap: 5px;
+    }
+}

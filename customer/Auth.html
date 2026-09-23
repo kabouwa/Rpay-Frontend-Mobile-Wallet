@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="Author" content="Mohammed Rahali">
+    <meta name="Description" 
+       content="Rpay is a modern digital wallet and online banking interface that allows users to manage balances,
+        view linked cards, transfer money, and access secure financial tools through a clean and responsive web design.">
+    <meta name="keywords" content="Rpay, pay, rahali pay, Wallet, Online bank">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+    <title>Rpay - Authentication</title>
+    <link rel="icon" href="../assets/icon/R-logo.png">
+    <meta name="theme-color" content="#2563EB">
+    <!-- StyleSheets -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="../assets/styles/root.css">
+    <link rel="stylesheet" href="../assets/styles/Auth.css">
+</head>
+<body>
+    <div class="customer-entry-animation"><img src="../assets/img/logos/Rpay.png"><div class="load-bar"><span></span></div></div>
+    <main class="container">
+        <section class="left-section">
+            <div class="left-header">
+                <img src="../assets/img/logos/R.png" alt="logo">
+                <h3>Rpay</h3>
+                <p>Wallet • Transfers • Cards</p>
+            </div>
+            <div class="left-body">
+                <h1>Sign in to manage your money with clarity.</h1>
+                <p>Track balances, view your linked cards, and move money with confidence—everything in one place.</p>
+            </div>
+            <div class="left-footer">
+                <span class="badge"><i class="fa-solid fa-shield-halved"></i> Secure access</span>
+                <span class="badge"><i class="fa-solid fa-receipt"></i> Clear fees</span>
+                <span class="badge"><i class="fa-solid fa-right-left"></i> Fast transfers</span>
+            </div>
+        </section>
+
+        <section class="right-section">
+            <div class="auth-card">
+                <div class="top-card">
+                    <a href="../index.html" class="btn go-back"><i class="fa-solid fa-arrow-left"></i> Go Back</a>
+                    <strong><span class="disc disc-primary"></span> Rpay</strong>
+                </div>
+                <input type="radio" id="login-tab" name="switcher" checked>
+                <input type="radio" id="sign-tab" name="switcher">
+                <div class="labels">
+                    <label for="login-tab"><i class="fa-solid fa-right-to-bracket"></i><strong>Login in</strong></label>
+                    <label for="sign-tab"><i class="fa-solid fa-user-plus"></i><strong>Sign Up</strong></label>
+                </div>
+
+                <!-- Login Tab -->
+                <div class="login-tab hidden">
+                    <h1>Welcome back</h1>
+                    <p>Log in to access your dashboard, transfers, and wallet.</p>
+                     <form action="Dashboard.html" method="GET"> <!--POST method not working in vs code live server -->
+                        <label>Email</label>
+                        <div class="input">
+                            <i class="fa-solid fa-envelope"></i> 
+                            <input class="btn" type="email" placeholder="name@example.com" required maxlength="30">
+                        </div>
+
+                        <label><span>Password</span><label for="forgot" class="forgot">Forgot?</label></label>
+                        <input type="checkbox" id="forgot">
+                        <div class="forgot-modal hidden">
+                            <div class="box-modal">
+                                <h1 class="close-recovery"><label for="forgot"><i class="fa-solid fa-xmark btn"></i></label></h1>
+                                <h1>Forgot your password?</h1>
+                                <p>Enter the email address linked to your account. We’ll send you instructions to reset your password securely.</p>
+                                <div class="box-input">
+                                    <i class="fa-solid fa-envelope"></i> 
+                                    <input class="btn" type="email" placeholder="name@example.com">
+                                    <label for="forgot" class="btn submit-btn forgot-submit">Submit</label>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="input">
+                            <i class="fa-solid fa-lock"></i>
+                            <input class="btn" type="password" placeholder="Your password" required minlength="8" maxlength="50">
+                        </div>
+                        
+                        <div class="check">
+                            <input type="checkbox" id="remember">
+                            <label for="remember"></label><span class="remember-label">Remember me</span>
+                        </div>
+                        
+                        <button type="submit" class="btn submit-btn"><i class="fa-solid fa-right-to-bracket"></i>Log in</button>
+                        
+                        <p class="divider">or continue with</p>
+                        <div class="social-login">
+                            <a href="#" class="btn btn-light"><i class="fa-brands fa-google"></i>Google</a>
+                            <a href="#" class="btn btn-light"><i class="fa-brands fa-apple"></i>Apple</a>
+                        </div>
+                        <p class="legal">By logging in, you agree to our <a href="#">Terms</a> and <a href="#">Privacy</a>.</p>
+                    </form>
+                </div>
+
+                <!-- Sign Up Tab -->
+                <div class="sign-tab hidden">
+                     
+                    <h1>Create your account</h1>
+                    <p>Set up your profile to start using your wallet and transfers.</p>
+                    <form action="Auth.html" method="POST">
+
+                        <label>Full name</label>
+                        <div class="input">
+                            <i class="fa-solid fa-user"></i>
+                            <input class="btn" type="text" placeholder="Your name" required>
+                        </div>
+
+                        <label>Email</label>
+                        <div class="input">
+                            <i class="fa-solid fa-envelope"></i> 
+                            <input class="btn" type="email" placeholder="name@example.com" required maxlength="30">
+                        </div>
+
+                        <label>Password</label>
+                        <div class="input">
+                            <i class="fa-solid fa-lock"></i>
+                            <input class="btn" type="password" placeholder="Create a password" required minlength="8" maxlength="50">
+                        </div>
+                        
+                        <div class="check">
+                            <input type="checkbox" id="agree" required>
+                            <label for="agree"></label><span class="agree-label">I agree to the <a href="#" class="terms">Terms</a></span>
+                        </div>
+                        
+                        <button type="submit" class="btn submit-btn"><i class="fa-solid fa-user-plus"></i>Create account</button>
+                        
+                        <p class="legal">Your information is used to create and secure your account.</p>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+</body>
+</html>

@@ -1,0 +1,533 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="Author" content="Mohammed Rahali">
+    <meta name="Description" 
+       content="Rpay is a modern digital wallet and online banking interface that allows users to manage balances,
+        view linked cards, transfer money, and access secure financial tools through a clean and responsive web design.">
+    <meta name="keywords" content="Rpay, pay, rahali pay, Wallet, Online bank">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+    <title>Rpay - Transactions</title>
+    <link rel="icon" href="../assets/icon/R-logo.png">
+    <meta name="theme-color" content="#2563EB">
+    <!-- StyleSheets -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="../assets/styles/root.css">
+    <link rel="stylesheet" href="../assets/styles/Transactions.css">
+</head>
+<body>
+    <div class="customer-entry-animation"><img src="../assets/img/logos/Rpay.png"><div class="load-bar"><span></span></div></div>
+    <header class="header">
+        <div class="header-nav1">
+            <a href="../index.html"><img src="../assets/img/logos/Rpay.png" alt="Rpay"></a>
+        </div>
+        <div class="header-nav2">
+                <a href="Dashboard.html"><i class="fa-solid fa-chart-line icon"></i>Dashboard</a>
+                <a href="Wallet.html"><i class="fa-solid fa-wallet icon"></i> Wallet</a>
+                <a href="Transfer.html"><i class="fa-solid fa-right-left icon"></i>Transfer</a>
+        </div>
+        <div class="header-nav3">
+            <a href="#" class="btn btn-light"><i class="fa-solid fa-gear"></i></a>
+            <a href="Auth.html" class="btn btn-danger hidden-phone">Log out</a>
+            <img src="../assets/img/profile.png" alt="user-profile">
+        </div>
+    </header>
+
+    <label for="navbar-toggler" class="hidden navbar-toggler-phone btn btn-light"><i class="fa-solid fa-bars"></i></label>
+    <div class="flex-menu-container">
+        <input type="checkbox" id="navbar-toggler">
+        <nav class="aside-menu">
+            <div class="top">
+                <div class="user-card">
+                    <a href="#">
+                    <img src="../assets/img/profile.png" alt="user-profile">
+                        <div>
+                            <h4>Mohammed Rahali</h4>
+                            <p>Account settings</p>
+                        </div> 
+                    </a>
+                </div>
+                <div class="search-menu">
+                    <input type="search">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                </div>
+                <a href="Dashboard.html"><i class="fa-solid fa-chart-line"></i>Dashboard</a>
+                <a href="Wallet.html"><i class="fa-solid fa-wallet"></i> Wallet</a>
+                <a href="Transfer.html"><i class="fa-solid fa-right-left"></i>Transfer</a>
+                <a href="Transactions.html" class="active"><i class="fa-solid fa-money-bill-transfer"></i>Transactions</a>
+                <a href="Support.html#last"><i class="fa-solid fa-headset"></i>Support</a>
+            </div>
+            <div class="bottom">
+                <a href="Auth.html" class="btn-danger"><i class="fa-solid fa-arrows-rotate"></i>Switch account</a>
+                <a href="../index.html" class="btn-danger"><i class="fa-solid fa-arrow-right-from-bracket"></i>Log out</a>
+            </div>
+        </nav>
+
+        <main class="main-container">
+            <p class="path"><strong> Rpay › Dashboard › Transactions</strong></p>
+            <section>
+                <div class="search-bar">
+                    <i class="fa-solid fa-magnifying-glass "></i>
+                    <input type="search" placeholder="Search by name or email">
+                    <i class="fa-solid fa-filter"></i>
+                </div>
+                <h3>Filter by</h3>
+                <div class="filters">
+                    <input type="radio" name="filter" id="d30" checked>
+                    <label for="d30">Date: Last 30 days</label>
+
+                    <input type="radio" name="filter" id="d90">
+                    <label for="d90">Date: Last 90 days</label>
+
+                    <input type="radio" name="filter" id="d180">
+                    <label for="d180">Date: Last 180 days</label>
+                </div>
+            </section>
+
+            
+            <div class="grid-container">
+
+                <h2>Transactions <span>(50/2954)</span></h2>
+                <div class="row grid-header">
+                <div class="col">RECIPIENT</div>
+                <div class="col">TYPE</div>
+                <div class="col">DATE</div>
+                <div class="col">AMOUNT</div>
+                <div class="col">STATUS</div>
+                </div>
+
+
+                <div class="row">
+                <div class="col">Ahmed K.</div>
+                <div class="col">Transfer</div>
+                <div class="col">18 Mar 2025</div>
+                <div class="col">- $75</div>
+                <div class="col"><p class="badge badge-danger"><i class="fa-solid fa-xmark icon"></i>Failed</p></div>
+                </div>
+
+                <div class="row">
+                <div class="col">Company</div>
+                <div class="col">Refund</div>
+                <div class="col">07 Jan 2025</div>
+                <div class="col">+ $1,200</div>
+                <div class="col"><p class="badge badge-success"><i class="fa-solid fa-check icon"></i>Completed</p></div>
+                </div>
+
+                <div class="row">
+                <div class="col">Amazon</div>
+                <div class="col">Purchase</div>
+                <div class="col">22 Nov 2025</div>
+                <div class="col">- $230</div>
+                <div class="col"><p class="badge badge-success"><i class="fa-solid fa-check icon"></i>Completed</p></div>
+                </div>
+
+                <div class="row">
+                <div class="col">Electricity</div>
+                <div class="col">Bill</div>
+                <div class="col">03 Feb 2025</div>
+                <div class="col">- $90</div>
+                <div class="col"><p class="badge badge-warning"><i class="fa-solid fa-clock icon"></i>Pending</p></div>
+                </div>
+
+                <div class="row">
+                <div class="col">Netflix</div>
+                <div class="col">Refund</div>
+                <div class="col">14 Apr 2025</div>
+                <div class="col">+ $15</div>
+                <div class="col"><p class="badge badge-success"><i class="fa-solid fa-check icon"></i>Completed</p></div>
+                </div>
+
+                <div class="row">
+                <div class="col">Spotify</div>
+                <div class="col">Subscription</div>
+                <div class="col">29 Jun 2025</div>
+                <div class="col">- $12</div>
+                <div class="col"><p class="badge badge-success"><i class="fa-solid fa-check icon"></i>Completed</p></div>
+                </div>
+
+                <div class="row">
+                <div class="col">Youssef B.</div>
+                <div class="col">Transfer</div>
+                <div class="col">11 Aug 2025</div>
+                <div class="col">- $300</div>
+                <div class="col"><p class="badge badge-danger"><i class="fa-solid fa-xmark icon"></i>Canceled</p></div>
+                </div>
+
+                <div class="row">
+                <div class="col">Employer</div>
+                <div class="col">Salary</div>
+                <div class="col">27 Dec 2025</div>
+                <div class="col">+ $2,500</div>
+                <div class="col"><p class="badge badge-success"><i class="fa-solid fa-check icon"></i>Completed</p></div>
+                </div>
+
+                <div class="row">
+                <div class="col">Prime Video</div>
+                <div class="col">Subscription</div>
+                <div class="col">09 May 2025</div>
+                <div class="col">- $9</div>
+                <div class="col"><p class="badge badge-success"><i class="fa-solid fa-check icon"></i>Completed</p></div>
+                </div>
+
+                <div class="row">
+                <div class="col">Water</div>
+                <div class="col">Bill</div>
+                <div class="col">16 Oct 2025</div>
+                <div class="col">- $45</div>
+                <div class="col"><p class="badge badge-warning"><i class="fa-solid fa-clock icon"></i>Pending</p></div>
+                </div>
+
+                <div class="row">
+                <div class="col">Bank</div>
+                <div class="col">Interest</div>
+                <div class="col">02 Jul 2025</div>
+                <div class="col">+ $8</div>
+                <div class="col"><p class="badge badge-success"><i class="fa-solid fa-check icon"></i>Completed</p></div>
+                </div>
+
+                <div class="row">
+                <div class="col">Discord</div>
+                <div class="col">Subscription</div>
+                <div class="col">21 Sep 2025</div>
+                <div class="col">- $10</div>
+                <div class="col"><p class="badge badge-success"><i class="fa-solid fa-check icon"></i>Completed</p></div>
+                </div>
+
+                <div class="row">
+                <div class="col">Ali M.</div>
+                <div class="col">Transfer</div>
+                <div class="col">06 Jun 2025</div>
+                <div class="col">- $120</div>
+                <div class="col"><p class="badge badge-warning"><i class="fa-solid fa-clock icon"></i>Pending</p></div>
+                </div>
+
+                <div class="row">
+                <div class="col">Refund Center</div>
+                <div class="col">Refund</div>
+                <div class="col">19 Feb 2025</div>
+                <div class="col">+ $60</div>
+                <div class="col"><p class="badge badge-success"><i class="fa-solid fa-check icon"></i>Completed</p></div>
+                </div>
+
+                <div class="row">
+                <div class="col">Google</div>
+                <div class="col">Subscription</div>
+                <div class="col">30 Nov 2025</div>
+                <div class="col">- $15</div>
+                <div class="col"><p class="badge badge-danger"><i class="fa-solid fa-xmark icon"></i>Failed</p></div>
+                </div>
+
+                <div class="row">
+                <div class="col">Uber</div>
+                <div class="col">Transport</div>
+                <div class="col">12 Mar 2025</div>
+                <div class="col">- $22</div>
+                <div class="col"><p class="badge badge-success"><i class="fa-solid fa-check icon"></i>Completed</p></div>
+                </div>
+
+                <div class="row">
+                <div class="col">Client</div>
+                <div class="col">Payment</div>
+                <div class="col">25 Aug 2025</div>
+                <div class="col">+ $500</div>
+                <div class="col"><p class="badge badge-success"><i class="fa-solid fa-check icon"></i>Completed</p></div>
+                </div>
+
+                <div class="row">
+                <div class="col">Apple</div>
+                <div class="col">Subscription</div>
+                <div class="col">04 Apr 2025</div>
+                <div class="col">- $7</div>
+                <div class="col"><p class="badge badge-warning"><i class="fa-solid fa-clock icon"></i>Pending</p></div>
+                </div>
+
+                <div class="row">
+                <div class="col">Restaurant</div>
+                <div class="col">Purchase</div>
+                <div class="col">10 Jul 2025</div>
+                <div class="col">- $48</div>
+                <div class="col"><p class="badge badge-success"><i class="fa-solid fa-check icon"></i>Completed</p></div>
+                </div>
+
+                <div class="row">
+                <div class="col">Telegram</div>
+                <div class="col">Subscription</div>
+                <div class="col">01 Dec 2025</div>
+                <div class="col">- $5</div>
+                <div class="col"><p class="badge badge-success"><i class="fa-solid fa-check icon"></i>Completed</p></div>
+                </div>
+
+                <div class="row">
+                <div class="col">Supermarket</div>
+                <div class="col">Purchase</div>
+                <div class="col">28 Dec 2025</div>
+                <div class="col">- $96</div>
+                <div class="col"><p class="badge badge-success"><i class="fa-solid fa-check icon"></i>Completed</p></div>
+                </div>
+
+                <div class="row">
+                <div class="col">Internet Provider</div>
+                <div class="col">Bill</div>
+                <div class="col">19 Dec 2025</div>
+                <div class="col">- $55</div>
+                <div class="col"><p class="badge badge-success"><i class="fa-solid fa-check icon"></i>Completed</p></div>
+                </div>
+
+                <div class="row">
+                <div class="col">Design Client</div>
+                <div class="col">Payment</div>
+                <div class="col">03 Dec 2025</div>
+                <div class="col">+ $420</div>
+                <div class="col"><p class="badge badge-success"><i class="fa-solid fa-check icon"></i>Completed</p></div>
+                </div>
+
+                <div class="row">
+                <div class="col">Gas Company</div>
+                <div class="col">Bill</div>
+                <div class="col">21 Nov 2025</div>
+                <div class="col">- $68</div>
+                <div class="col"><p class="badge badge-warning"><i class="fa-solid fa-clock icon"></i>Pending</p></div>
+                </div>
+
+                <div class="row">
+                <div class="col">Steam</div>
+                <div class="col">Purchase</div>
+                <div class="col">09 Nov 2025</div>
+                <div class="col">- $40</div>
+                <div class="col"><p class="badge badge-success"><i class="fa-solid fa-check icon"></i>Completed</p></div>
+                </div>
+
+                <div class="row">
+                <div class="col">Karim S.</div>
+                <div class="col">Transfer</div>
+                <div class="col">27 Oct 2025</div>
+                <div class="col">- $260</div>
+                <div class="col"><p class="badge badge-danger"><i class="fa-solid fa-xmark icon"></i>Canceled</p></div>
+                </div>
+
+                <div class="row">
+                <div class="col">Taxi</div>
+                <div class="col">Transport</div>
+                <div class="col">14 Oct 2025</div>
+                <div class="col">- $19</div>
+                <div class="col"><p class="badge badge-success"><i class="fa-solid fa-check icon"></i>Completed</p></div>
+                </div>
+
+                <div class="row">
+                <div class="col">Mobile Operator</div>
+                <div class="col">Bill</div>
+                <div class="col">02 Oct 2025</div>
+                <div class="col">- $25</div>
+                <div class="col"><p class="badge badge-warning"><i class="fa-solid fa-clock icon"></i>Pending</p></div>
+                </div>
+
+                <div class="row">
+                <div class="col">Freelance Client</div>
+                <div class="col">Payment</div>
+                <div class="col">18 Sep 2025</div>
+                <div class="col">+ $750</div>
+                <div class="col"><p class="badge badge-success"><i class="fa-solid fa-check icon"></i>Completed</p></div>
+                </div>
+
+                <div class="row">
+                <div class="col">Gym</div>
+                <div class="col">Subscription</div>
+                <div class="col">06 Sep 2025</div>
+                <div class="col">- $35</div>
+                <div class="col"><p class="badge badge-warning"><i class="fa-solid fa-clock icon"></i>Pending</p></div>
+                </div>
+
+                <div class="row">
+                <div class="col">Hardware Store</div>
+                <div class="col">Purchase</div>
+                <div class="col">25 Aug 2025</div>
+                <div class="col">- $67</div>
+                <div class="col"><p class="badge badge-success"><i class="fa-solid fa-check icon"></i>Completed</p></div>
+                </div>
+
+                <div class="row">
+                <div class="col">International Client</div>
+                <div class="col">Payment</div>
+                <div class="col">11 Aug 2025</div>
+                <div class="col">+ $1,100</div>
+                <div class="col"><p class="badge badge-success"><i class="fa-solid fa-check icon"></i>Completed</p></div>
+                </div>
+
+                <div class="row">
+                <div class="col">Water Company</div>
+                <div class="col">Bill</div>
+                <div class="col">29 Jul 2025</div>
+                <div class="col">- $44</div>
+                <div class="col"><p class="badge badge-success"><i class="fa-solid fa-check icon"></i>Completed</p></div>
+                </div>
+
+                <div class="row">
+                <div class="col">Online Course</div>
+                <div class="col">Purchase</div>
+                <div class="col">13 Jul 2025</div>
+                <div class="col">- $99</div>
+                <div class="col"><p class="badge badge-success"><i class="fa-solid fa-check icon"></i>Completed</p></div>
+                </div>
+
+                <div class="row">
+                <div class="col">Ali R.</div>
+                <div class="col">Transfer</div>
+                <div class="col">01 Jul 2025</div>
+                <div class="col">- $95</div>
+                <div class="col"><p class="badge badge-danger"><i class="fa-solid fa-xmark icon"></i>Failed</p></div>
+                </div>
+
+                <div class="row">
+                <div class="col">Insurance</div>
+                <div class="col">Bill</div>
+                <div class="col">18 Jun 2025</div>
+                <div class="col">- $110</div>
+                <div class="col"><p class="badge badge-warning"><i class="fa-solid fa-clock icon"></i>Pending</p></div>
+                </div>
+
+                <div class="row">
+                <div class="col">Savings Bank</div>
+                <div class="col">Interest</div>
+                <div class="col">02 Jun 2025</div>
+                <div class="col">+ $12</div>
+                <div class="col"><p class="badge badge-success"><i class="fa-solid fa-check icon"></i>Completed</p></div>
+                </div>
+
+                <div class="row">
+                <div class="col">Taxi App</div>
+                <div class="col">Transport</div>
+                <div class="col">19 May 2025</div>
+                <div class="col">- $21</div>
+                <div class="col"><p class="badge badge-success"><i class="fa-solid fa-check icon"></i>Completed</p></div>
+                </div>
+
+                <div class="row">
+                <div class="col">Cloud Hosting</div>
+                <div class="col">Subscription</div>
+                <div class="col">04 May 2025</div>
+                <div class="col">- $29</div>
+                <div class="col"><p class="badge badge-success"><i class="fa-solid fa-check icon"></i>Completed</p></div>
+                </div>
+
+                <div class="row">
+                <div class="col">Bonus</div>
+                <div class="col">Salary</div>
+                <div class="col">22 Apr 2025</div>
+                <div class="col">+ $300</div>
+                <div class="col"><p class="badge badge-success"><i class="fa-solid fa-check icon"></i>Completed</p></div>
+                </div>
+
+                <div class="row">
+                <div class="col">Courier Service</div>
+                <div class="col">Delivery</div>
+                <div class="col">10 Apr 2025</div>
+                <div class="col">- $16</div>
+                <div class="col"><p class="badge badge-warning"><i class="fa-solid fa-clock icon"></i>Pending</p></div>
+                </div>
+
+                <div class="row">
+                <div class="col">Food Delivery</div>
+                <div class="col">Service</div>
+                <div class="col">28 Mar 2025</div>
+                <div class="col">- $28</div>
+                <div class="col"><p class="badge badge-success"><i class="fa-solid fa-check icon"></i>Completed</p></div>
+                </div>
+
+                <div class="row">
+                <div class="col">Movie Theater</div>
+                <div class="col">Entertainment</div>
+                <div class="col">16 Mar 2025</div>
+                <div class="col">- $30</div>
+                <div class="col"><p class="badge badge-success"><i class="fa-solid fa-check icon"></i>Completed</p></div>
+                </div>
+
+                <div class="row">
+                <div class="col">Marketing Client</div>
+                <div class="col">Payment</div>
+                <div class="col">03 Mar 2025</div>
+                <div class="col">+ $680</div>
+                <div class="col"><p class="badge badge-success"><i class="fa-solid fa-check icon"></i>Completed</p></div>
+                </div>
+
+                <div class="row">
+                <div class="col">Epic game</div>
+                <div class="col">Purchase</div>
+                <div class="col">01 Mar 2025</div>
+                <div class="col">- $23</div>
+                <div class="col"><p class="badge badge-success"><i class="fa-solid fa-check icon"></i>Completed</p></div>
+                </div>
+
+                <div class="row">
+                <div class="col">Taxi</div>
+                <div class="col">Transport</div>
+                <div class="col">19 Feb 2025</div>
+                <div class="col">- $18</div>
+                <div class="col"><p class="badge badge-success"><i class="fa-solid fa-check icon"></i>Completed</p></div>
+                </div>
+
+                <div class="row">
+                <div class="col">Online Store</div>
+                <div class="col">Purchase</div>
+                <div class="col">05 Feb 2025</div>
+                <div class="col">- $210</div>
+                <div class="col"><p class="badge badge-success"><i class="fa-solid fa-check icon"></i>Completed</p></div>
+                </div>
+
+                <div class="row">
+                <div class="col">Web Tools</div>
+                <div class="col">Subscription</div>
+                <div class="col">24 Jan 2025</div>
+                <div class="col">- $22</div>
+                <div class="col"><p class="badge badge-danger"><i class="fa-solid fa-xmark icon"></i>Failed</p></div>
+                </div>
+
+                <div class="row">
+                <div class="col">Food Market</div>
+                <div class="col">Purchase</div>
+                <div class="col">11 Jan 2025</div>
+                <div class="col">- $54</div>
+                <div class="col"><p class="badge badge-success"><i class="fa-solid fa-check icon"></i>Completed</p></div>
+                </div>
+
+                <div class="row">
+                <div class="col">Taxi</div>
+                <div class="col">Transport</div>
+                <div class="col">03 Jan 2025</div>
+                <div class="col">- $20</div>
+                <div class="col"><p class="badge badge-success"><i class="fa-solid fa-check icon"></i>Completed</p></div>
+                </div>
+
+                <div class="loader-trans">
+                    <ul>
+                        <li>Previous</li>
+                        <li class="active">1</li>
+                        <li>2</li>
+                        <li>3</li>
+                        <li>4</li>
+                        <li>Next</li>
+                    </ul>
+                </div>
+    
+            </div> <!-- end grid container -->
+
+            <!-- Footer -->
+            <span class="line"></span>
+            <footer class="footer">
+                <div class="left">
+                    <a href="index.html"><img src="../assets/img/logos/Rpay.png" alt="footer-logo"></a>
+                    <p class="copyright">Rpay Payments Ltd. is a digital payments and online wallet provider offering account management, money transfers, and card services through its web platform.</p>
+                    <p class="copyright">Services are provided in accordance with applicable electronic money and payment service regulations in the user’s location.</p>
+                    <p>© 2026 Rpay. All rights reserved.</p>
+                </div>
+                <div class="right">
+                    <a href="../index.html">Home</a>
+                    <a href="Dashboard.html">Dashboard</a>
+                    <a href="Wallet.html">Wallet</a>
+                    <a href="Support.html#last">Support</a>
+                </div>
+        </footer>
+        </main>
+    </div>
+</body>
+</html>

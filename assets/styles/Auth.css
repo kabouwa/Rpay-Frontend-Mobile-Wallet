@@ -1,0 +1,410 @@
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: var(--gradient);
+    min-height: 100vh;
+    overflow: hidden;
+}
+.container{
+    display: grid;
+    justify-content: center;
+    align-content: center;
+    grid-template-columns: 0.95fr 1.05fr;
+    gap: 40px;
+    width: 100%;
+    max-width: 1150px;
+}
+i{
+    margin-right: 7px;
+}
+/* Left Section */
+.left-section{
+    width: 100%;
+    margin: 20px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-between;
+    padding: 20px;
+    background: linear-gradient(to bottom, #4391e447, #2f6ae9bc),
+    url(../img/auth-portrait.png) center;
+    background-size: cover;
+    border-radius: var(--radius-card);
+    color:var(--white);
+}
+.left-header{
+    position: relative;
+    border-radius: var(--radius-badge);
+    background: var(--glass-bg);
+    backdrop-filter: var(--glass-blur);
+    border : var(--glass-bd);
+    padding: 10px 20px 10px 45px;
+    font-size: 0.8rem;
+    cursor: context-menu;
+    transition: scale 0.5s ease-in-out, background 0.5s ease-in-out;
+}
+.left-header img{
+    width: 20px;
+    display: block;
+    position: absolute;
+    top: 16px;
+    left: 17px;
+    filter: brightness(1000%);
+}
+.left-footer{
+        display: flex;
+        gap: 10px;
+}
+.left-footer .badge{
+    border-radius: var(--radius-badge);
+    background: var(--glass-bg);
+    backdrop-filter: var(--glass-blur);
+    border : var(--glass-bd);
+    padding: 10px 12px;
+    margin-right: 2px;
+    cursor: context-menu;
+    transition: scale 0.5s ease-in-out, background 0.5s ease-in-out;
+}
+.left-header:hover, .badge:hover{
+    scale: 1.03;
+    background: rgba(255, 255, 255, 0.25);
+}
+/* Right Section */
+.right-section{
+    display: grid;
+    justify-content: stretch;
+    align-content: center;
+    padding: 20px;
+}
+.auth-card{
+    background-color: rgba(255, 255, 255, 0.85);
+    border-radius: var(--radius-card);
+    box-shadow: var(--shadow);
+    padding: 18px;
+}
+.top-card{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.top-card .go-back:active{
+    color: var(--black);
+}
+.top-card i{
+    margin-top: 3px;
+}
+.top-card strong{
+    color: var(--black);
+    margin-right: 5px;
+    font-weight: 800;
+}
+.labels{
+    height: 40px;
+    margin: 15px 0;
+    border: var(--border);
+    border-radius: var(--radius-btn);
+    padding: 7px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.labels label{
+    width: 50%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: var(--radius-btn);
+    cursor: pointer;
+    transition: all 0.1s ease-out;
+    border: solid 1px transparent;
+}
+/* Change style for label of radio selected  */
+#login-tab:checked ~ .labels [for="login-tab"]{
+    border: var(--border);
+    background-color: var(--white);
+    color: var(--black);
+}
+#sign-tab:checked ~ .labels [for="sign-tab"]{
+    border: var(--border);
+    background-color: var(--white);
+    color: var(--black);
+}
+/* Show and hide tab */
+#login-tab:checked ~ .login-tab{
+    display: flex;
+    opacity: 1;
+}
+#sign-tab:checked ~ .sign-tab{
+    display: flex;
+    opacity: 1;
+}
+
+
+
+
+/* Login and SignUp Style */
+.login-tab, .sign-tab{
+    flex-direction: column;
+    align-items: stretch;
+}
+.login-tab h1, .sign-tab h1{
+    color: var(--black);
+    font-size: 1.5rem;
+    margin: 5px 0;
+}
+form{
+    display: flex;
+    flex-direction: column;
+}
+form label{
+    font-weight: bolder;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 13px 0 7px 0;
+    font-size: 0.9rem;
+}
+.forgot{
+    color: var(--primary);
+    font-weight: 900;
+    cursor: pointer;
+}
+.input{
+    display: flex;
+    position: relative;
+}
+.input i{
+    position: absolute;
+    top: 15px;
+    left: 15px;
+}
+input{
+    outline: none;
+    height: 22px;
+    flex-grow: 1;
+    padding-left: 42px !important;
+    font-size: 0.9rem;
+    transition: all 0.2s cubic-bezier(0.215, 0.610, 0.355, 1);
+}
+input:focus{
+    outline: none;
+    border-color:var(--primary);
+    box-shadow: 0 0 10px var(--primary-light);
+}
+.check{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+.remember-label, .agree-label{
+    margin-top: 4px;
+    font-size: 0.9rem;
+}
+[for="remember"], [for="agree"]{
+    display: inline-block;
+    width: 19px;
+    height: 18px;
+    border: var(--border);
+    border-radius: 3px;
+    margin-right: 10px;
+    cursor: pointer;
+    position: relative;
+    transition: all 0.3s ease-in-out 0.2s ;
+}
+[for="remember"]::after, [for="agree"]::after{
+    content: "✓";
+    color: var(--white);
+    font-size: 0.8rem;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    border-radius: 2px;
+    background-color: var(--primary);
+    display: grid;
+    place-content: center;
+    opacity: 0;
+    scale: 0.3;
+    transform: rotate(-250deg);
+    transition: all 0.3s ease-in-out;
+}
+#remember:checked ~ [for="remember"], #agree:checked ~ [for="agree"]{
+    border: solid 1px var(--primary);
+}
+#remember:checked ~ [for="remember"]::after, #agree:checked ~ [for="agree"]::after{
+    opacity: 1;
+    scale: 1;
+    transform: rotate(0deg);
+}
+.submit-btn{
+    background-color: var(--primary);
+    color: var(--white);
+    font-weight: 900;
+    margin: 10px 0;
+    border: none;
+    box-shadow: 0 10px 20px var(--primary-light);
+    cursor: pointer;
+    transition: all 0.3s cubic-bezier(0.215, 0.610, 0.355, 1);
+    height: 50px;
+}
+.submit-btn:hover{
+    transform: translateY(-2px);
+    filter: brightness(90%);
+}
+.divider{
+    text-align: center;
+    width: 100%;
+    margin: 10px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 5px;
+}
+.divider::before{
+    content: "";
+    flex-grow: 1;
+    height: 1px;
+    border-bottom: var(--border);
+}
+.divider::after{
+    content: "";
+    flex-grow: 1;
+    height: 1px;
+    border-bottom: var(--border);
+}
+.social-login{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin: 10px 0px;
+    font-weight: bold;
+}
+.social-login .btn{
+    flex-grow: 1;
+}
+.legal{
+    text-align: center;
+    margin: 10px 0;
+    font-size: 0.9rem;
+}
+.legal a, .terms{
+    font-weight: 900;
+    color: var(--primary);
+}
+.legal a:hover, .terms:hover{
+    text-decoration: underline;
+}
+
+/* Box model of forgot */
+[for="forgot"]:hover{
+    color: var(--muted);
+    cursor: pointer;
+}
+.forgot-modal{
+    /* display: grid; */
+    z-index: 1000;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.526);
+    place-content: center;
+}
+.box-modal{
+    background-color: rgba(255, 255, 255, 0.689);
+    backdrop-filter: var(--glass-blur);
+    box-shadow: var(--shadow);
+    padding: 20px;
+    border: var(--glass-bd);
+    border-radius: var(--radius-card);
+    width:70vw;
+    max-width: 600px;
+    position: relative;
+}
+.box-modal h1{
+    font-size: 2.2rem;
+    color: var(--primary);
+    margin-bottom: 10px;
+}
+.close-recovery{
+   position: absolute;
+   top: 8px;
+   right: 10px;
+}
+.box-input{
+    position: relative;
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    justify-content: center;
+    transition: all 0.2s ease-in-out;
+}
+.box-input i{
+    position: absolute;
+    top: 15px;
+    left: 15px;
+    pointer-events: none;
+}
+.forgot-submit {
+   height: 28px;
+}
+/* show box model on click forgot */
+#forgot:checked ~ .forgot-modal{
+    display: grid;
+    opacity: 1;
+}
+
+
+/* Responsive Style */
+@media screen and (max-width:1000px){
+    body{
+        overflow: auto;
+    }
+    .container{
+        max-width: 600px;
+        grid-template-columns: 1fr;
+        justify-content: space-between;
+        align-content: stretch;
+        gap: 0;
+        margin-top: 10px;
+    }
+    .left-section{
+        width: auto;
+        min-height: 400px;
+        width: auto;
+        margin: 0 20px;
+        font-size: 0.8rem;
+        align-items: center;
+    }
+    .left-header{
+        width: 80%;
+    }
+    .left-header img{
+        top: 13px;
+    }
+    .left-body{
+        text-align: center;
+    }
+    .left-footer{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: stretch;
+        gap: 10px;
+        width: auto;
+        width: 90%;
+    }
+    .badge{
+       flex-grow: 1;
+       text-align: center;
+    }
+    .right-section{
+        margin-bottom: 50px;
+    }
+}

@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="Author" content="Mohammed Rahali">
+    <meta name="Description" 
+       content="Rpay is a modern digital wallet and online banking interface that allows users to manage balances,
+        view linked cards, transfer money, and access secure financial tools through a clean and responsive web design.">
+    <meta name="keywords" content="Rpay, pay, rahali pay, Wallet, Online bank">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+    <title>Rpay - Dashboard</title>
+    <link rel="icon" href="../assets/icon/R-logo.png">
+    <meta name="theme-color" content="#2563EB">
+    <!-- StyleSheets -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="../assets/styles/root.css">
+    <link rel="stylesheet" href="../assets/styles/Dashboard.css">
+</head>
+<body>
+    <div class="customer-entry-animation"><img src="../assets/img/logos/Rpay.png"><div class="load-bar"><span></span></div></div>
+    <header class="header">
+        <div class="header-nav1">
+            <a href="../index.html"><img src="../assets/img/logos/Rpay.png" alt="Rpay"></a>
+        </div>
+        <div class="header-nav2">
+                <a href="Dashboard.html" class="active"><i class="fa-solid fa-chart-line icon"></i>Dashboard</a>
+                <a href="Wallet.html"><i class="fa-solid fa-wallet icon"></i> Wallet</a>
+                <a href="Transfer.html"><i class="fa-solid fa-right-left icon"></i>Transfer</a>
+        </div>
+        <div class="header-nav3">
+            <a href="#" class="btn btn-light"><i class="fa-solid fa-gear"></i></a>
+            <a href="Auth.html" class="btn btn-danger hidden-phone">Log out</a>
+            <img src="../assets/img/profile.png" alt="user-profile">
+        </div>
+    </header>
+
+    <label for="navbar-toggler" class="hidden navbar-toggler-phone btn btn-light"><i class="fa-solid fa-bars"></i></label>
+    <div class="flex-menu-container">
+        <input type="checkbox" id="navbar-toggler">
+        <nav class="aside-menu">
+            <div class="top">
+                <div class="user-card">
+                    <a href="#">
+                    <img src="../assets/img/profile.png" alt="user-profile">
+                        <div>
+                            <h4>Mohammed Rahali</h4>
+                            <p>Account settings</p>
+                        </div> 
+                    </a>
+                </div>
+                <div class="search-menu">
+                    <input type="search">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                </div>
+                <a href="Dashboard.html" class="active"><i class="fa-solid fa-chart-line"></i>Dashboard</a>
+                <a href="Wallet.html"><i class="fa-solid fa-wallet"></i> Wallet</a>
+                <a href="Transfer.html"><i class="fa-solid fa-right-left"></i>Transfer</a>
+                <a href="Transactions.html"><i class="fa-solid fa-money-bill-transfer"></i>Transactions</a>
+                <a href="Support.html#last"><i class="fa-solid fa-headset"></i>Support</a>
+            </div>
+            <div class="bottom">
+                <a href="Auth.html" class="btn-danger"><i class="fa-solid fa-arrows-rotate"></i>Switch account</a>
+                <a href="../index.html" class="btn-danger"><i class="fa-solid fa-arrow-right-from-bracket"></i>Log out</a>
+            </div>
+        </nav>
+
+        <main class="main-container">
+            <p class="path"><strong> Rpay › Dashboard › Overview</strong></p>
+
+            <div class="grid-container">
+                <!-- Item 1  : Balance -->
+                <div class="grid-item item1">
+                        <p class="badge badge-success verified">verified</p>
+                        <h3>Total Rpay balance</h3>
+                        <h1>$ 6,292.85</h1>
+                        <div class="balance">
+                            <span class="disc disc-primary"></span>
+                            <p>USD Wallet</p>
+                            <h5>$ 2,740.80</h5>
+                        </div>
+                        <div class="balance">
+                            <span class="disc disc-accent"></span>
+                            <p>EUR Wallet</p>
+                            <h5>€ 1,960.10</h5>
+                        </div>
+                        <div class="balance">
+                            <span class="disc disc-success"></span>
+                            <p>MAD Wallet</p>
+                            <h5>MAD 11,200.00</h5>
+                        </div>
+
+
+
+                        <div class="options">
+                            <a href="Transfer.html" class="btn btn-primary">Transfer</a>
+                            <a href="Wallet.html" class="btn btn-light">View Wallet</a>
+                        </div>
+                </div>
+
+
+
+                <!-- Item 2  : Insights -->
+                <div class="grid-item item2">
+                    <p class="badge"><i class="fa-solid fa-bolt icon"></i> <strong>Rpay Insights</strong></p>
+                    <div>
+                        <h2>All your finances in one view.</h2>
+                        <p>Track balances, manage cards, and send transfers with clear fees.</p>
+                    </div>
+                    <div><a href="../index.html" class="btn btn-primary"><i class="fa-solid fa-circle-info icon"></i> Learn more</a></div>
+                    
+                    <div class="lightblue-card"></div>
+                    <div class="blue-card"></div>
+                    <div class="green-card"></div>
+                </div>
+
+
+
+                <!-- Item 3  : Cards -->
+                <div class="grid-item item3">
+                    <a href="Wallet.html" class="btn btn-light">More</a>
+                    <h3><strong>Your cards</strong> 3</h3>
+                    <div class="cards card1">
+                        <h3>**** 6789</h3>
+                        <h3>primary card</h3>
+                        <span class="card-type"><i class="fa-brands fa-cc-mastercard"></i></span>
+                    </div>
+                    <div class="cards card2">
+                        <h3>**** 4362</h3>
+                        <h3>Online purchases</h3>
+                        <span class="card-type"><i class="fa-brands fa-cc-visa"></i></span>
+                    </div>
+                    <div class="cards card3">
+                        <h3>**** 7896</h3>
+                        <h3>Travel card</h3>
+                        <span class="card-type"><i class="fa-brands fa-cc-visa"></i></span>
+                    </div>
+                </div>
+                
+
+
+                <!-- Item 4  : Quick Transfer -->
+                <div class="grid-item item4">
+                    <a href="Transfer.html"><i class="fa-solid fa-plus icon"></i>New</a>
+                    <h3>Quick transfer</h3>
+                    <h2>Transfer to a contact</h2>
+                    
+                    <form action="Transfer.html" method="GET">
+                        <div class="input-box">
+                            <h3>Amount</h3>
+                            <h1>$ <input type="number" min="1" max="99999" value="250.00" placeholder="000.00" required></h1>
+                        </div>
+                        <button type="submit" class="btn btn-primary"><i class="fa-solid fa-right-left icon"></i>Transfer</button>
+                    </form>
+                    
+                    <h2>Recent recipients</h2>
+                    <div class="contact">
+                        <span>A</span>
+                        <span>C</span>
+                        <span>S</span>
+                        <span>M</span>
+                        <span><i class="fa-solid fa-plus"></i></span>
+                    </div>
+                </div>
+
+
+
+                <!-- Item 5  : Statistics -->
+                <div class="grid-item item5">
+                    <a href="#">Details <i class="fa-solid fa-angle-right"></i></a>
+                    <h2>Statistics</h2>
+                    <section class="section1">
+                        <h3>Revenue of the last month</h3>
+                        <p>$ 3541.52</p>
+                        <div class="sec1-bottom">
+                            <div class="columns">
+                            <div class="col col1"></div>
+                            <div class="col col2"></div>
+                            <div class="col col3"></div>
+                            <div class="col col4"></div>
+                            <div class="col col5"></div> 
+                            </div>
+                            <h5 class="badge badge-success"><strong><i class="fa-solid fa-arrow-trend-up"></i> +3.7%</strong></h5>
+                        </div>
+                    </section>
+                    <span class="line"></span>
+
+                    <section class="section2">
+                        <h2>Overview<span>(last 4 months)</span></h2>
+                        <div class="months-report">
+                            <div class="col col1">
+                                <h4>Oct</h4>
+                                <h4>85%</h4>
+                            </div>
+
+                            <div class="col col2">
+                                <h4>Nov</h4>
+                                <h4>51%</h4>
+                            </div>
+
+                            <div class="col col3">
+                                <h4>Dec</h4>
+                                <h4>31%</h4>
+                            </div>
+                            
+                            <div class="col col4">
+                                <h4>Jan</h4>
+                                <h4>67%</h4>
+                            </div>
+                        </div>
+                    </section>
+                </div>
+
+
+
+                <!-- Item 6  : Subscriptions -->
+                <div class="grid-item item6">
+                    <a href="#">Manage <i class="fa-solid fa-angle-right"></i></a>
+                    <h3><span>Subscriptions</span> 3</h3>
+
+                    <div class="subscription">
+                        <div class="sub-logo"><i class="fa-brands fa-telegram"></i></div>
+                        <div>
+                            <h4>Telegram +</h4>
+                            <p>Next: 10 Apr</p>
+                        </div>
+                        <h4>$8.99</h4>
+                    </div> 
+                    
+                    <div class="subscription">
+                        <div class="sub-logo"><i class="fa-brands fa-spotify"></i></div>
+                        <div>
+                            <h4>Spotify Family</h4>
+                            <p>Next: 15 Apr</p>
+                        </div>
+                        <h4>$9.99</h4>
+                    </div> 
+                    
+                    <div class="subscription">
+                        <div class="sub-logo"><i class="fa-brands fa-discord"></i></div>
+                        <div>
+                            <h4>Discord Nitro</h4>
+                            <p>Next: 20 Apr</p>
+                        </div>
+                        <h4>$19.99</h4>
+                    </div> 
+                    
+                </div>
+
+
+
+                <!-- Item 7  : Transactions -->
+                <div class="grid-item item7">
+                    <h3>Recent activity</h3>
+                    <div class="activities">
+                        <span class="operation-icon"><i class="fa-solid fa-arrow-right"></i></span>
+                        <div>
+                            <h1 class="operation">Transfer sent</h1>
+                            <p>To: Ahmed K.</p>
+                        </div>
+                        <div>
+                            <h1>- $75</h1>
+                            <p class="badge badge-danger"><i class="fa-solid fa-xmark icon"></i>Failed</p>
+                        </div>
+                    </div>
+
+                    <div class="activities">
+                        <span class="operation-icon"><i class="fa-solid fa-arrow-left"></i></span>
+                        <div>
+                            <h1 class="operation">Salary received</h1>
+                            <p>From: Company</p>
+                        </div>
+                        <div>
+                            <h1>+ $1,200</h1>
+                            <p class="badge badge-success"><i class="fa-solid fa-check icon"></i>Completed</p>
+                        </div>
+                    </div>
+
+                    <div class="activities">
+                        <span class="operation-icon"><i class="fa-solid fa-arrow-right"></i></span>
+                        <div>
+                            <h1 class="operation">Online purchase</h1>
+                            <p>Store: Amazon</p>
+                        </div>
+                        <div>
+                            <h1>- $230</h1>
+                            <p class="badge badge-success"><i class="fa-solid fa-check icon"></i>Completed</p>
+                        </div>
+                    </div>
+                    <div><a href="Transactions.html" class="btn btn-primary">Show all</a></div>
+                    
+                </div>
+            </div> <!-- end grid container -->
+
+            <!-- Footer -->
+            <span class="line"></span>
+            <footer class="footer">
+                <div class="left">
+                    <a href="index.html"><img src="../assets/img/logos/Rpay.png" alt="footer-logo"></a>
+                    <p class="copyright">Rpay Payments Ltd. is a digital payments and online wallet provider offering account management, money transfers, and card services through its web platform.</p>
+                    <p class="copyright">Services are provided in accordance with applicable electronic money and payment service regulations in the user’s location.</p>
+                    <p>© 2026 Rpay. All rights reserved.</p>
+                </div>
+                <div class="right">
+                    <a href="../index.html">Home</a>
+                    <a href="Dashboard.html">Dashboard</a>
+                    <a href="Wallet.html">Wallet</a>
+                    <a href="Support.html#last">Support</a>
+                </div>
+        </footer>
+        </main>
+    </div>
+</body>
+</html>

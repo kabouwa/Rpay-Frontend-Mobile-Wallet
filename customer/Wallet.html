@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="Author" content="Mohammed Rahali">
+    <meta name="Description" 
+       content="Rpay is a modern digital wallet and online banking interface that allows users to manage balances,
+        view linked cards, transfer money, and access secure financial tools through a clean and responsive web design.">
+    <meta name="keywords" content="Rpay, pay, rahali pay, Wallet, Online bank">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+    <title>Rpay - Wallet</title>
+    <link rel="icon" href="../assets/icon/R-logo.png">
+    <meta name="theme-color" content="#2563EB">
+    <!-- StyleSheets -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="../assets/styles/root.css">
+    <link rel="stylesheet" href="../assets/styles/Wallet.css">
+</head>
+<body>
+    <div class="customer-entry-animation"><img src="../assets/img/logos/Rpay.png"><div class="load-bar"><span></span></div></div>
+    <header class="header">
+        <div class="header-nav1">
+            <a href="../index.html"><img src="../assets/img/logos/Rpay.png" alt="Rpay"></a>
+        </div>
+        <div class="header-nav2">
+                <a href="Dashboard.html"><i class="fa-solid fa-chart-line icon"></i>Dashboard</a>
+                <a href="Wallet.html" class="active"><i class="fa-solid fa-wallet icon"></i> Wallet</a>
+                <a href="Transfer.html"><i class="fa-solid fa-right-left icon"></i>Transfer</a>
+        </div>
+        <div class="header-nav3">
+            <a href="#" class="btn btn-light"><i class="fa-solid fa-gear"></i></a>
+            <a href="Auth.html" class="btn btn-danger hidden-phone">Log out</a>
+            <img src="../assets/img/profile.png" alt="user-profile">
+        </div>
+    </header>
+
+    <label for="navbar-toggler" class="hidden navbar-toggler-phone btn btn-light"><i class="fa-solid fa-bars"></i></label>
+    <div class="flex-menu-container">
+        <input type="checkbox" id="navbar-toggler">
+        <nav class="aside-menu">
+            <div class="top">
+                <div class="user-card">
+                    <a href="#">
+                    <img src="../assets/img/profile.png" alt="user-profile">
+                        <div>
+                            <h4>Mohammed Rahali</h4>
+                            <p>Account settings</p>
+                        </div> 
+                    </a>
+                </div>
+                <div class="search-menu">
+                    <input type="search">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                </div>
+                <a href="Dashboard.html"><i class="fa-solid fa-chart-line"></i>Dashboard</a>
+                <a href="Wallet.html" class="active"><i class="fa-solid fa-wallet"></i> Wallet</a>
+                <a href="Transfer.html"><i class="fa-solid fa-right-left"></i>Transfer</a>
+                <a href="Transactions.html"><i class="fa-solid fa-money-bill-transfer"></i>Transactions</a>
+                <a href="Support.html#last"><i class="fa-solid fa-headset"></i>Support</a>
+            </div>
+            <div class="bottom">
+                <a href="Auth.html" class="btn-danger"><i class="fa-solid fa-arrows-rotate"></i>Switch account</a>
+                <a href="../index.html" class="btn-danger"><i class="fa-solid fa-arrow-right-from-bracket"></i>Log out</a>
+            </div>
+        </nav>
+
+        <main class="main-container">
+            <p class="path"><strong> Rpay › Dashboard › Wallet</strong></p>
+
+            <div class="grid-container">
+
+                <!-- Item 1 : header of grid -->
+                <div class="grid-item item1">
+                    <div>
+                        <h2>Wallet</h2>
+                        <p>Multi-currency wallets, linked cards, limits and recent activity.</p>
+                    </div>
+                    <span class="badge badge-success"><i class="fa-solid fa-shield-halved icon"></i> Verified</span>
+                </div>
+
+                <!-- Item 2 : left card -->
+                <div class="grid-item item2">
+                    <div class="balance-card">
+                        <span><i class="fa-solid fa-globe icon"></i> Multi currency</span>
+                        <h3>Total balance</h3>
+                        <h1>$ 6,292.85</h1>
+                        <h4>Primary wallet: USD • Updated: Today</h4>
+                    </div>
+                    <div class="balance-actions">
+                        <a href="Transfer.html" class="btn btn-primary"><i class="fa-solid fa-paper-plane icon"></i> Send</a>
+                        <button type="button" class="btn btn-light"><i class="fa-solid fa-plus icon"></i> Add Money</button>
+                        <button type="button" class="btn btn-light"><i class="fa-solid fa-arrow-down icon"></i> Withdraw</button>
+                        <button type="button" class="btn btn-light"><i class="fa-solid fa-arrows-rotate icon"></i> Convert</button>
+                    </div>
+                
+                    <h3 class="title">Currency wallets <span><i class="fa-solid fa-circle-info icon"></i> Fees apply</span></h3>
+                    <p>Each wallet has its own balance and actions (Add / Send / Convert).</p>
+
+                    <div class="wallet">
+                        <span class="disc disc-primary"></span>
+                        <div class="left">
+                            <h3>USD Wallet</h3>
+                            <p>ID: WLT-USD-1028 • Default</p>
+                        </div>
+                        <div class="right">
+                            <h3>$ 2,740.80</h3>
+                            <div class="wallet-actions">
+                                <button type="button" class="btn btn-light"><i class="fa-solid fa-plus icon"></i> Add</button>
+                                <button type="button" class="btn btn-light"><i class="fa-solid fa-paper-plane icon"></i> Send</button>
+                                <button type="button" class="btn btn-light"><i class="fa-solid fa-arrows-rotate icon"></i> Convert</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="wallet">
+                        <span class="disc disc-accent"></span>
+                        <div class="left">
+                            <h3>EUR Wallet</h3>
+                            <p>ID: WLT-EUR-7731</p>
+                        </div>
+                        <div class="right">
+                            <h3>€ 1,960.10</h3>
+                            <div class="wallet-actions">
+                                <button type="button" class="btn btn-light"><i class="fa-solid fa-plus icon"></i> Add</button>
+                                <button type="button" class="btn btn-light"><i class="fa-solid fa-paper-plane icon"></i> Send</button>
+                                <button type="button" class="btn btn-light"><i class="fa-solid fa-arrows-rotate icon"></i> Convert</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="wallet">
+                        <span class="disc disc-success"></span>
+                        <div class="left">
+                            <h3>MAD Wallet</h3>
+                            <p>ID: WLT-MAD-4500</p>
+                        </div>
+                        <div class="right">
+                            <h3>MAD 11,200.00</h3>
+                            <div class="wallet-actions">
+                                <button type="button" class="btn btn-light"><i class="fa-solid fa-plus icon"></i> Add</button>
+                                <button type="button" class="btn btn-light"><i class="fa-solid fa-paper-plane icon"></i> Send</button>
+                                <button type="button" class="btn btn-light"><i class="fa-solid fa-arrows-rotate icon"></i> Convert</button>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    
+                    <h3 class="title">Recent activity <a href="Transactions.html" class="btn btn-light"><i class="fa-solid fa-money-bill-transfer icon"></i>View all</a></h3>
+                    <p>Latest transfers, adds, conversions and fees.</p>
+
+                    <div class="activities">
+                        <span class="operation-icon"><i class="fa-solid fa-arrow-right"></i></span>
+                        <div>
+                            <h1 class="operation">Transfer sent</h1>
+                            <p>To: Ahmed K.</p>
+                        </div>
+                        <div>
+                            <h1>- $75</h1>
+                            <p class="badge badge-danger"><i class="fa-solid fa-xmark icon"></i>Failed</p>
+                        </div>
+                    </div>
+
+                    <div class="activities">
+                        <span class="operation-icon"><i class="fa-solid fa-arrow-left"></i></span>
+                        <div>
+                            <h1 class="operation">Salary received</h1>
+                            <p>From: Company</p>
+                        </div>
+                        <div>
+                            <h1>+ $1,200</h1>
+                            <p class="badge badge-success"><i class="fa-solid fa-check icon"></i>Completed</p>
+                        </div>
+                    </div>
+
+                    <div class="activities">
+                        <span class="operation-icon"><i class="fa-solid fa-arrow-right"></i></span>
+                        <div>
+                            <h1 class="operation">Online purchase</h1>
+                            <p>Store: Amazon</p>
+                        </div>
+                        <div>
+                            <h1>- $230</h1>
+                            <p class="badge badge-success"><i class="fa-solid fa-check icon"></i>Completed</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Item 3 : Right card -->
+                <div class="grid-item item3">
+
+                    <h3>Linked cards</h3>
+                    <p>Cards linked to your account.</p>
+
+                    <div class="cards">
+                        <span class="btn"><i class="fa-brands fa-cc-mastercard"></i></span>
+                        <div>
+                            <h3>Mastercard • **** 6789</h3>
+                            <p>Primary card • Expires 10/28</p>
+                        </div>
+                        <span class="badge badge-success"><i class="fa-solid fa-circle-check icon"></i> Verified</span>
+                    </div>
+                    <div class="cards">
+                        <span class="btn"><i class="fa-brands fa-cc-visa"></i></span>
+                        <div>
+                            <h3>Visa • **** 4362</h3>
+                            <p>Backup card • Expires 4/27</p>
+                        </div>
+                        <span class="badge badge-success"><i class="fa-solid fa-circle-check icon"></i> Verified</span>
+                    </div>
+                    <div class="cards">
+                        <span class="btn"><i class="fa-brands fa-cc-visa"></i></span>
+                        <div>
+                            <h3>Visa • **** 7896</h3>
+                            <p>Backup card • Expires 7/32</p>
+                        </div>
+                        <span class="badge badge-warning"><i class="fa-solid fa-circle-check icon"></i> Review</span>
+                    </div>
+                    <span class="btn btn-light"><span><i class="fa-solid fa-credit-card icon"></i></span> Manage cards</span>
+                    <span class="btn btn-light"><i class="fa-solid fa-plus icon"></i> Add new card</span>
+
+                    <!-- Wallet Information Section -->
+                    <span class="line" style="margin: 10px 0;"></span>
+                    <h3 class="details-title">Limits & details <span class="badge badge-success"><i class="fa-solid fa-lock icon"></i> Secure</span></h3>
+                    <div class="details">
+                        <h3>Account ID</h3>
+                        <h3>WLT-8F2A-19C0</h3>
+                    </div>
+
+                    <div class="details">
+                        <h3>Primary currency</h3>
+                        <h3>USD</h3>
+                    </div>
+
+                    <div class="details">
+                        <h3>Daily limit</h3>
+                        <h3>$ 5,000</h3>
+                    </div>
+
+                    <div class="details">
+                        <h3>Monthly limit</h3>
+                        <h3>$ 20,000</h3>
+                    </div>
+
+                    <span class="btn btn-light"><i class="fa-solid fa-building-columns icon"></i> Link bank account</span>
+                    <span class="btn btn-light"><i class="fa-solid fa-receipt icon"></i> View fees</span>
+
+                    <div class="details">
+                        <h3>Security:</h3>
+                        <span class="badge badge-success"><i class="fa-solid fa-circle-check icon"></i>Email verified</span>
+                        <span class="badge badge-success"><i class="fa-solid fa-circle-check icon"></i>Phone verified</span>
+                        <span class="badge badge-warning"><i class="fa-solid fa-user-shield icon"></i>Identity check</span>
+                        <p>Never share passwords, card details, or one-time passcodes (OTP).</p>
+                    </div>
+                </div>
+
+            </div> <!-- end grid container -->
+
+            <!-- Footer -->
+            <span class="line" style="margin-top: 50px;"></span>
+            <footer class="footer">
+                <div class="left">
+                        <a href="index.html"><img src="../assets/img/logos/Rpay.png" alt="footer-logo"></a>
+                        <p class="copyright">Rpay Payments Ltd. is a digital payments and online wallet provider offering account management, money transfers, and card services through its web platform.</p>
+                        <p class="copyright">Services are provided in accordance with applicable electronic money and payment service regulations in the user’s location.</p>
+                        <p>© 2026 Rpay. All rights reserved.</p>
+                    </div>
+                    <div class="right">
+                        <a href="../index.html">Home</a>
+                        <a href="Dashboard.html">Dashboard</a>
+                        <a href="Wallet.html">Wallet</a>
+                        <a href="Support.html#last">Support</a>
+                    </div>
+            </footer>
+        </main>
+    </div>
+</body>
+</html>
