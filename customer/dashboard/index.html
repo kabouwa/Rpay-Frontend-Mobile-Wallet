@@ -9,28 +9,28 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta charset="UTF-8">
     <title>Rpay - Dashboard</title>
-    <link rel="icon" href="../assets/icon/R-logo.png">
+    <link rel="icon" href="/assets/icon/R-logo.png">
     <meta name="theme-color" content="#2563EB">
     <!-- StyleSheets -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
-    <link rel="stylesheet" href="../assets/styles/root.css">
-    <link rel="stylesheet" href="../assets/styles/Dashboard.css">
+    <link rel="stylesheet" href="/assets/styles/root.css">
+    <link rel="stylesheet" href="/assets/styles/Dashboard.css">
 </head>
 <body>
-    <div class="customer-entry-animation"><img src="../assets/img/logos/Rpay.png"><div class="load-bar"><span></span></div></div>
+    <div class="customer-entry-animation"><img src="/assets/img/logos/Rpay.png"><div class="load-bar"><span></span></div></div>
     <header class="header">
         <div class="header-nav1">
-            <a href="../index.html"><img src="../assets/img/logos/Rpay.png" alt="Rpay"></a>
+            <a href="/"><img src="/assets/img/logos/Rpay.png" alt="Rpay"></a>
         </div>
         <div class="header-nav2">
-                <a href="Dashboard.html" class="active"><i class="fa-solid fa-chart-line icon"></i>Dashboard</a>
-                <a href="Wallet.html"><i class="fa-solid fa-wallet icon"></i> Wallet</a>
-                <a href="Transfer.html"><i class="fa-solid fa-right-left icon"></i>Transfer</a>
+                <a href="/customer/dashboard" class="active"><i class="fa-solid fa-chart-line icon"></i>Dashboard</a>
+                <a href="/customer/wallet"><i class="fa-solid fa-wallet icon"></i> Wallet</a>
+                <a href="/customer/transfer"><i class="fa-solid fa-right-left icon"></i>Transfer</a>
         </div>
         <div class="header-nav3">
             <a href="#" class="btn btn-light"><i class="fa-solid fa-gear"></i></a>
-            <a href="Auth.html" class="btn btn-danger hidden-phone">Log out</a>
-            <img src="../assets/img/profile.png" alt="user-profile">
+            <a href="/customer/auth" class="btn btn-danger hidden-phone">Log out</a>
+            <img src="/assets/img/profile.png" alt="user-profile">
         </div>
     </header>
 
@@ -41,7 +41,7 @@
             <div class="top">
                 <div class="user-card">
                     <a href="#">
-                    <img src="../assets/img/profile.png" alt="user-profile">
+                    <img src="/assets/img/profile.png" alt="user-profile">
                         <div>
                             <h4>Mohammed Rahali</h4>
                             <p>Account settings</p>
@@ -52,15 +52,15 @@
                     <input type="search">
                     <i class="fa-solid fa-magnifying-glass"></i>
                 </div>
-                <a href="Dashboard.html" class="active"><i class="fa-solid fa-chart-line"></i>Dashboard</a>
-                <a href="Wallet.html"><i class="fa-solid fa-wallet"></i> Wallet</a>
-                <a href="Transfer.html"><i class="fa-solid fa-right-left"></i>Transfer</a>
-                <a href="Transactions.html"><i class="fa-solid fa-money-bill-transfer"></i>Transactions</a>
-                <a href="Support.html#last"><i class="fa-solid fa-headset"></i>Support</a>
+                <a href="/customer/auth" class="active"><i class="fa-solid fa-chart-line"></i>Dashboard</a>
+                <a href="/customer/wallet"><i class="fa-solid fa-wallet"></i> Wallet</a>
+                <a href="/customer/transfer"><i class="fa-solid fa-right-left"></i>Transfer</a>
+                <a href="/customer/transactions"><i class="fa-solid fa-money-bill-transfer"></i>Transactions</a>
+                <a href="/customer/support#last"><i class="fa-solid fa-headset"></i>Support</a>
             </div>
             <div class="bottom">
-                <a href="Auth.html" class="btn-danger"><i class="fa-solid fa-arrows-rotate"></i>Switch account</a>
-                <a href="../index.html" class="btn-danger"><i class="fa-solid fa-arrow-right-from-bracket"></i>Log out</a>
+                <a href="/customer/auth" class="btn-danger"><i class="fa-solid fa-arrows-rotate"></i>Switch account</a>
+                <a href="/" class="btn-danger"><i class="fa-solid fa-arrow-right-from-bracket"></i>Log out</a>
             </div>
         </nav>
 
@@ -92,8 +92,8 @@
 
 
                         <div class="options">
-                            <a href="Transfer.html" class="btn btn-primary">Transfer</a>
-                            <a href="Wallet.html" class="btn btn-light">View Wallet</a>
+                            <a href="/customer/transfer" class="btn btn-primary">Transfer</a>
+                            <a href="/customer/wallet" class="btn btn-light">View Wallet</a>
                         </div>
                 </div>
 
@@ -106,7 +106,7 @@
                         <h2>All your finances in one view.</h2>
                         <p>Track balances, manage cards, and send transfers with clear fees.</p>
                     </div>
-                    <div><a href="../index.html" class="btn btn-primary"><i class="fa-solid fa-circle-info icon"></i> Learn more</a></div>
+                    <div><a href="/" class="btn btn-primary"><i class="fa-solid fa-circle-info icon"></i> Learn more</a></div>
                     
                     <div class="lightblue-card"></div>
                     <div class="blue-card"></div>
@@ -117,7 +117,7 @@
 
                 <!-- Item 3  : Cards -->
                 <div class="grid-item item3">
-                    <a href="Wallet.html" class="btn btn-light">More</a>
+                    <a href="/customer/wallet" class="btn btn-light">More</a>
                     <h3><strong>Your cards</strong> 3</h3>
                     <div class="cards card1">
                         <h3>**** 6789</h3>
@@ -140,11 +140,11 @@
 
                 <!-- Item 4  : Quick Transfer -->
                 <div class="grid-item item4">
-                    <a href="Transfer.html"><i class="fa-solid fa-plus icon"></i>New</a>
+                    <a href="/customer/transfer"><i class="fa-solid fa-plus icon"></i>New</a>
                     <h3>Quick transfer</h3>
                     <h2>Transfer to a contact</h2>
                     
-                    <form action="Transfer.html" method="GET">
+                    <form action="/customer/transfer" method="GET">
                         <div class="input-box">
                             <h3>Amount</h3>
                             <h1>$ <input type="number" min="1" max="99999" value="250.00" placeholder="000.00" required></h1>
@@ -161,7 +161,6 @@
                         <span><i class="fa-solid fa-plus"></i></span>
                     </div>
                 </div>
-
 
 
                 <!-- Item 5  : Statistics -->
@@ -286,7 +285,7 @@
                             <p class="badge badge-success"><i class="fa-solid fa-check icon"></i>Completed</p>
                         </div>
                     </div>
-                    <div><a href="Transactions.html" class="btn btn-primary">Show all</a></div>
+                    <div><a href="/customer/transactions" class="btn btn-primary">Show all</a></div>
                     
                 </div>
             </div> <!-- end grid container -->
@@ -295,18 +294,18 @@
             <span class="line"></span>
             <footer class="footer">
                 <div class="left">
-                    <a href="index.html"><img src="../assets/img/logos/Rpay.png" alt="footer-logo"></a>
+                    <a href="/"><img src="/assets/img/logos/Rpay.png" alt="footer-logo"></a>
                     <p class="copyright">Rpay Payments Ltd. is a digital payments and online wallet provider offering account management, money transfers, and card services through its web platform.</p>
                     <p class="copyright">Services are provided in accordance with applicable electronic money and payment service regulations in the user’s location.</p>
                     <p>© 2026 Rpay. All rights reserved.</p>
                 </div>
                 <div class="right">
-                    <a href="../index.html">Home</a>
-                    <a href="Dashboard.html">Dashboard</a>
-                    <a href="Wallet.html">Wallet</a>
-                    <a href="Support.html#last">Support</a>
+                    <a href="/">Home</a>
+                    <a href="/customer/dashboard">Dashboard</a>
+                    <a href="/customer/wallet">Wallet</a>
+                    <a href="/customer/support#last">Support</a>
                 </div>
-        </footer>
+            </footer>
         </main>
     </div>
 </body>

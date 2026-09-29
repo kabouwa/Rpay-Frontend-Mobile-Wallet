@@ -9,19 +9,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta charset="UTF-8">
     <title>Rpay - Authentication</title>
-    <link rel="icon" href="../assets/icon/R-logo.png">
+    <link rel="icon" href="/assets/icon/R-logo.png">
     <meta name="theme-color" content="#2563EB">
     <!-- StyleSheets -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
-    <link rel="stylesheet" href="../assets/styles/root.css">
-    <link rel="stylesheet" href="../assets/styles/Auth.css">
+    <link rel="stylesheet" href="/assets/styles/root.css">
+    <link rel="stylesheet" href="/assets/styles/Auth.css">
 </head>
 <body>
-    <div class="customer-entry-animation"><img src="../assets/img/logos/Rpay.png"><div class="load-bar"><span></span></div></div>
+    <div class="customer-entry-animation"><img src="/assets/img/logos/Rpay.png"><div class="load-bar"><span></span></div></div>
     <main class="container">
         <section class="left-section">
             <div class="left-header">
-                <img src="../assets/img/logos/R.png" alt="logo">
+                <img src="/assets/img/logos/R.png" alt="logo">
                 <h3>Rpay</h3>
                 <p>Wallet • Transfers • Cards</p>
             </div>
@@ -39,7 +39,7 @@
         <section class="right-section">
             <div class="auth-card">
                 <div class="top-card">
-                    <a href="../index.html" class="btn go-back"><i class="fa-solid fa-arrow-left"></i> Go Back</a>
+                    <a href="/" class="btn go-back"><i class="fa-solid fa-arrow-left"></i> Go Back</a>
                     <strong><span class="disc disc-primary"></span> Rpay</strong>
                 </div>
                 <input type="radio" id="login-tab" name="switcher" checked>
@@ -53,7 +53,7 @@
                 <div class="login-tab hidden">
                     <h1>Welcome back</h1>
                     <p>Log in to access your dashboard, transfers, and wallet.</p>
-                     <form action="Dashboard.html" method="GET"> <!--POST method not working in vs code live server -->
+                     <form action="/customer/dashboard" method="POST"> <!--POST method not working in vs code live server -->
                         <label>Email</label>
                         <div class="input">
                             <i class="fa-solid fa-envelope"></i> 
@@ -101,7 +101,7 @@
                      
                     <h1>Create your account</h1>
                     <p>Set up your profile to start using your wallet and transfers.</p>
-                    <form action="Auth.html" method="POST">
+                    <form action="/customer/auth" method="POST">
 
                         <label>Full name</label>
                         <div class="input">
