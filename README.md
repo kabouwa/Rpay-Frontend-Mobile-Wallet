@@ -1,4 +1,4 @@
-<p align="center"> <img src="https://raw.githubusercontent.com/kabouwa/Rpay-Frontend-Mobile-Wallet/blob/main/assets/img/logos/Rpay.png" alt="Rpay" width="500"> </p>
+<p align="center"> <img src="https://raw.githubusercontent.com/kabouwa/Rpay-Frontend-Mobile-Wallet/main/assets/img/logos/Rpay.png" alt="Rpay" width="500"> </p>
 
 # Rpay — Frontend Mobile Wallet
 
